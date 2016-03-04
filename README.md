@@ -24,7 +24,7 @@ Additional Technologies:
 2.	AJAX.
 3.	JQuery.
 
-External Libraries:
+External Libraries (need to be included): 
 
 1.	Javascript
 
