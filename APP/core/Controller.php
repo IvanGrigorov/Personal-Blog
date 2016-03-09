@@ -5,12 +5,13 @@ require_once 'View.php';
 require_once 'Session.php';
 require_once 'Cookies.php';
 require_once (dirname(__FILE__).'/../libraries/Constants.php');
+require_once (dirname(__FILE__).'/../interfaces/IController.php');
 
 /**
  * Class Controller 
  * Abstract class for all controlers
  */
-abstract class Controller
+abstract class Controller implements IController
 {
 	private $viewFileName;
 

@@ -1,13 +1,15 @@
 <?
 	// Include needed files and classes	
 	require_once 'Database.php';
+	require_once (dirname(__FILE__).'/../interfaces/IModel.php');
+
 
 
 	/**
 	 * Abstract class Model
 	 * Initialize new Database
 	 */
-	abstract class Model
+	abstract class Model implements IModel 
 	{
 		private $database;
 
