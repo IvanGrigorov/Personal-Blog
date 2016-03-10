@@ -27,8 +27,8 @@ class Registration  extends Controller
 		$userName = trim($userName);
 		$password = trim($password);
 		$this->model = new RegistrationModel();
-		$userName =	mysqli_real_escape_string($this->model->database->connection, $userName);
-		$password =	mysqli_real_escape_string($this->model->database->connection, $password);
+		$userName =	mysqli_real_escape_string($this->model->GetDatabase()->closeConnection(), $userName);
+		$password =	mysqli_real_escape_string($this->model->GetDatabase()->closeConnection(), $password);
 		if (checkingForValidUsernameAndPassword($userName) &&
 			checkingForValidUsernameAndPassword($password)) {
 			if ($this->model->checkForUniqueData('Username', $userName) && $this->model->checkForUniqueData('Password', $password)) {

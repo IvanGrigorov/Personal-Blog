@@ -50,10 +50,10 @@
 
 			foreach ($topic as $value) {
 				trim($value);
-				mysqli_real_escape_string($this->model->database->connection, $value);
+				mysqli_real_escape_string($this->model->GetDatabase()->closeConnection(), $value);
 			}
 
-			if ($this->model->checkIfTitleExists($topic['title'], $this->model->database->connection)) {
+			if ($this->model->checkIfTitleExists($topic['title'], $this->model->GetDatabase()->closeConnection())) {
 				$this->model->GetDatabase()->closeConnection();
 			}
 

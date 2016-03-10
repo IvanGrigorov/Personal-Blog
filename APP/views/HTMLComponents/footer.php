@@ -41,7 +41,6 @@
    </div>
 </div> 
 <script type="text/javascript" src="http://ivanit.netne.net/Bootstrap/js/data.js"></script>   
-<script type="text/javascript" src="http://ivanit.netne.net/Bootstrap/js/customJS.js"></script>  
-<script src="http://ivanit.netne.net/Bootstrap/js/bootstrap.min.js"></script>    
+<script type="text/javascript" src="http://ivanit.netne.net/Bootstrap/js/customJS.js"></script>   
 </body>
 </html>

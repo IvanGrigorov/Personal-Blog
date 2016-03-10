@@ -13,7 +13,7 @@
                             <li><span>Description:</span> <input type="text"  name="description" placeholder="Required" class="req"></li>
                             <li><span>Written by me:</span> <input type="text"  name="WbM" placeholder="Required" class="req"></li>
                             <li><span>Link of the code:</span> <input type="text"  name="LoC" placeholder="Required" class="req"></li>
-                            <li><span>Technologies used:</span> <input id="TechnologyField" type="text"  name="TechnUsed" placeholder="Required" class="req" disabled="disabled"></li>
+                            <li><span>Technologies used:</span> <input id="TechnologyField" type="text"  name="TechnUsed" placeholder="Required" class="req" readonly="readonly"></li>
                             <button class="undo" type="button" style="display: inline-block; margin: 1%;"><img src="http://ivanit.netne.net/Bootstrap/Images/Additional/FirstProject.png"></button>
                             <!-- Split button -->
                            	<div id="TechnologySelection">
@@ -21,9 +21,9 @@
 								<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Java
 								  <span class="caret"></span></button>
 								  <ul class="dropdown-menu">
-								    <li><a href="#">Spring</a></li>
+								    <li><a href="#">JAVA EE</a></li>
 								    <li><a href="#">OOP</a></li>
-								    <li><a href="#">Swift</a></li>
+								    <li><a href="#">Swing</a></li>
 								    <li><a href="#">Java language</a></li>
 								  </ul>
 								</div>
@@ -37,7 +37,7 @@
 								    <li><a href="#">OOP</a></li>
 								    <li><a href="#">WPF</a></li>
 								    <li><a href="#">WinForms</a></li>
-								    <li><a href="#">C# language</a></li>
+								    <li><a href="#">CSharp language</a></li>
 								  </ul>
 								</div>
 								
@@ -74,6 +74,16 @@
 								    <li><a href="#">PHP language</a></li>
 								  </ul>
 								</div>																  
+
+								<div class="dropdown">
+							 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Databases
+								  <span class="caret"></span></button>
+								  <ul class="dropdown-menu">
+								    <li><a href="#">SQL</a></li>
+								    <li><a href="#">SQLServer</a></li>
+								    <li><a href="#">MySQL</a></li>
+								  </ul>
+								</div>																  
 							</div>
 																																						
                         </ul>
@@ -88,6 +98,7 @@
                         <div class="category">Category: 
                           <select name="category">
                             <option value="CSharp">C#</option>
+                            <option>Java</option>
                             <option>Websites</option>
                             <option>Web Apps</option>
                             <option>Unity 3D</option>

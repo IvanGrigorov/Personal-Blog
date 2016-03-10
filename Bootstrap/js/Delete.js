@@ -29,11 +29,16 @@ $(document).on("append", function() {
 function loadDataFromJSON() {
 	var url = "/Categories/GetTopicsForDelete/" + $('#CategoryToDelete').val();
 	$.getJSON(url, function(data) {
-		for (var value in data) {
-			var button = '<button class="delete" style="float: right; margin: 1%;"><img src="http://ivanit.netne.net/Bootstrap/Images/Additional/gnome_edit_delete.png"></button>';
-			var legend = '<legend class="scheduler-border"><a href="/Project/Project/'+ data[value]["Title"]  +'">'+ data[value]["Title"]  +'</a></legend>';
-			var article = '<p>'+ data[value]["Article"] +'</p>';
-			$("#selectedCategory").append('<fieldset class="project" class="scheduler-border">' + button + legend + article + '</fieldset>');
+		if (!data.length) {
+			$("#selectedCategory").append('<div style="color:white">There are no projects for this category</div>');
+		}
+		else {
+			for (var value in data) {
+				var button = '<button class="delete" style="float: right; margin: 1%;"><img src="http://ivanit.netne.net/Bootstrap/Images/Additional/gnome_edit_delete.png"></button>';
+				var legend = '<legend class="scheduler-border"><a href="/Project/Project/'+ data[value]["Title"]  +'">'+ data[value]["Title"]  +'</a></legend>';
+				var article = '<p>'+ data[value]["Article"] +'</p>';
+				$("#selectedCategory").append('<fieldset class="project" class="scheduler-border">' + button + legend + article + '</fieldset>');
+			}
 		}
 	});
 }

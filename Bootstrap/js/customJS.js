@@ -157,7 +157,7 @@ function getInfoAboutTech() {
       $("#technology").append('<div style="color: white;"></div>');
       $("#technology > div").text(data.description);
       $("#technology > div").prepend(header + img);
-      
+      $("#technology > div").append('<br/><br/><div style="color: white;">Source: Wikipedia</div>');
     }) 
     $("#technology").fadeIn(1600);
   })
@@ -172,6 +172,7 @@ function makeSlidermobileFriendly() {
 
 function updateUsedTechnologiesAfterChoosingOne() {
 	$("#TechnologySelection a").on("click", function(e) { 
+    e.preventDefault();
 		var text = $(this).text().trim();
 		var currentText = $("#TechnologyField").val();
 		$("#TechnologyField").val(currentText + text + "; ");

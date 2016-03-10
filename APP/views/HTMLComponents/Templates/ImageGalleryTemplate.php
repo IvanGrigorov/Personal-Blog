@@ -1,8 +1,11 @@
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
+  <!-- Add OL elements if needed
   <ol class="carousel-indicators">
-   {elements}
+   {//elements}
   </ol>
+
+  -->
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">

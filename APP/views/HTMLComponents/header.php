@@ -11,9 +11,7 @@
             <title>Ivan Grigorov - Blog</title>
             <link rel="shortcut icon" href="http://ivanit.netne.net/Bootstrap/Images/Letter-I-blue-icon.png">
             <link rel="stylesheet" type="text/css" href="http://ivanit.netne.net/Bootstrap/CSS Codes/MainPageCSSStyle.css">
-            <link rel="stylesheet" href="http://ivanit.netne.net/Bootstrap/css/bootstrap.min.css">
-            <script type="text/javascript" src="http://ivanit.netne.net/Bootstrap/js/data.js"></script>   
-            <script type="text/javascript" src="http://ivanit.netne.net/Bootstrap/js/customJS.js"></script>
+            <link rel="stylesheet" href="http://ivanit.netne.net/Bootstrap/css/bootstrap.min.css"> 
             <script src="http://ivanit.netne.net/Bootstrap/js/bootstrap.min.js"></script> 
             <meta name="description" content="The oficial website of Ivan Grigorov - Programmer Student">
             <meta name="author" content="Ivan Grigorov">
@@ -80,9 +78,13 @@
                                   <ul class="dropdown-menu">
                                     <li><a href="/Categories/Projects/CSharp">C#</a></li>
                                     <hr> 
-                                    <li><a >Websites</a></li>
+                                    <li><a href="/Categories/Projects/Java">Java</a></li>
+                                    <hr> 
+                                    <li><a href="/Categories/Projects/Web Apps">Web Apps</a></li>
+                                    <hr> 
+                                    <li><a href="/Categories/Projects/Websites">Websites</a></li>
                                     <hr>
-                                    <li><a >Unity 3D</a></li>
+                                    <li><a href="/Categories/Projects/Unity 3D">Unity 3D</a></li>
                                     <hr>
                                   </ul>
                                 </li>

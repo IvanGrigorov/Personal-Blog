@@ -9,7 +9,7 @@
                             <li><span>Link of the code:</span> <?= $GLOBALS['link']; ?> </li>
                             <li><h3 style="margin-bottom: 50px">Technologies used (click on them for zoom and additional info - May not work in Internet Explorer):</h3> 
                             <? 
-                                $technologies = preg_split( "/[; ,]/", $GLOBALS['technologies'], -1, PREG_SPLIT_NO_EMPTY); 
+                                $technologies = array_filter(preg_split('/[; ,]/', $GLOBALS['technologies'], -1, PREG_SPLIT_NO_EMPTY));
                                 $lenght = count($technologies); 
                                 if ($lenght == 0) {
                                     $technologyCarousel = "<div> There are no selected technologies for this project </div>";
